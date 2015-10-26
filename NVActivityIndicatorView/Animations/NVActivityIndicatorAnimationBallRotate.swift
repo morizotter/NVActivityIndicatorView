@@ -40,9 +40,9 @@ class NVActivityIndicatorAnimationBallRotate: NVActivityIndicatorAnimationDelega
         animation.removedOnCompletion = false
         
         // Draw circles
-        let leftCircle = NVActivityIndicatorShape.Circle.createLayerWith(size: CGSize(width: circleSize, height: circleSize), color: color)
-        let rightCircle = NVActivityIndicatorShape.Circle.createLayerWith(size: CGSize(width: circleSize, height: circleSize), color: color)
-        let centerCircle = NVActivityIndicatorShape.Circle.createLayerWith(size: CGSize(width: circleSize, height: circleSize), color: color)
+        let leftCircle = NVActivityIndicatorShape.Circle.createLayerWith(CGSize(width: circleSize, height: circleSize), color: color)
+        let rightCircle = NVActivityIndicatorShape.Circle.createLayerWith(CGSize(width: circleSize, height: circleSize), color: color)
+        let centerCircle = NVActivityIndicatorShape.Circle.createLayerWith(CGSize(width: circleSize, height: circleSize), color: color)
         
         leftCircle.opacity = 0.8
         leftCircle.frame = CGRect(x: 0, y: (size.height - circleSize) / 2, width: circleSize, height: circleSize)

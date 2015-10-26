@@ -63,7 +63,7 @@ class NVActivityIndicatorAnimationBallClipRotateMultiple: NVActivityIndicatorAni
     }
     
     func circleOf(shape shape: NVActivityIndicatorShape, duration: CFTimeInterval, timingFunction: CAMediaTimingFunction, layer: CALayer, size: CGFloat, color: UIColor, reverse: Bool) {
-        let circle = shape.createLayerWith(size: CGSize(width: size, height: size), color: color)
+        let circle = shape.createLayerWith(CGSize(width: size, height: size), color: color)
         let frame = CGRect(x: (layer.bounds.size.width - size) / 2,
             y: (layer.bounds.size.height - size) / 2,
             width: size,

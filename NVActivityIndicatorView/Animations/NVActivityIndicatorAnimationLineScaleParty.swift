@@ -29,7 +29,7 @@ class NVActivityIndicatorAnimationLineScaleParty: NVActivityIndicatorAnimationDe
         animation.removedOnCompletion = false
         
         for var i = 0; i < 4; i++ {
-            let line = NVActivityIndicatorShape.Line.createLayerWith(size: CGSize(width: lineSize, height: size.height), color: color)
+            let line = NVActivityIndicatorShape.Line.createLayerWith(CGSize(width: lineSize, height: size.height), color: color)
             let frame = CGRect(x: x + lineSize * 2 * CGFloat(i), y: y, width: lineSize, height: size.height)
             
             animation.beginTime = beginTime + beginTimes[i]

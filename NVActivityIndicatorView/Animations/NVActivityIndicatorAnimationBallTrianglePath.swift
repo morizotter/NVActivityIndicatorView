@@ -29,7 +29,7 @@ class NVActivityIndicatorAnimationBallTrianglePath: NVActivityIndicatorAnimation
         animation.removedOnCompletion = false
         
         // Top-center circle
-        let topCenterCircle = NVActivityIndicatorShape.Ring.createLayerWith(size: CGSize(width: circleSize, height: circleSize), color: color)
+        let topCenterCircle = NVActivityIndicatorShape.Ring.createLayerWith(CGSize(width: circleSize, height: circleSize), color: color)
         
         changeAnimation(animation, values:["{0,0}", "{hx,fy}", "{-hx,fy}", "{0,0}"], deltaX: deltaX, deltaY: deltaY)
         topCenterCircle.frame = CGRectMake(x + size.width / 2 - circleSize / 2, y, circleSize, circleSize)
@@ -37,7 +37,7 @@ class NVActivityIndicatorAnimationBallTrianglePath: NVActivityIndicatorAnimation
         layer.addSublayer(topCenterCircle)
         
         // Bottom-left circle
-        let bottomLeftCircle = NVActivityIndicatorShape.Ring.createLayerWith(size: CGSize(width: circleSize, height: circleSize), color: color)
+        let bottomLeftCircle = NVActivityIndicatorShape.Ring.createLayerWith(CGSize(width: circleSize, height: circleSize), color: color)
         
         changeAnimation(animation, values: ["{0,0}", "{hx,-fy}", "{fx,0}", "{0,0}"], deltaX: deltaX, deltaY: deltaY)
         bottomLeftCircle.frame = CGRectMake(x, y + size.height - circleSize, circleSize, circleSize)
@@ -45,7 +45,7 @@ class NVActivityIndicatorAnimationBallTrianglePath: NVActivityIndicatorAnimation
         layer.addSublayer(bottomLeftCircle)
         
         // Bottom-right circle
-        let bottomRightCircle = NVActivityIndicatorShape.Ring.createLayerWith(size: CGSize(width: circleSize, height: circleSize), color: color)
+        let bottomRightCircle = NVActivityIndicatorShape.Ring.createLayerWith(CGSize(width: circleSize, height: circleSize), color: color)
         
         changeAnimation(animation, values: ["{0,0}", "{-fx,0}", "{-hx,-fy}", "{0,0}"], deltaX: deltaX, deltaY:deltaY)
         bottomRightCircle.frame = CGRectMake(x + size.width - circleSize, y + size.height - circleSize, circleSize, circleSize)

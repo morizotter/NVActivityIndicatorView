@@ -42,7 +42,7 @@ class NVActivityIndicatorAnimationBallScaleRippleMultiple: NVActivityIndicatorAn
         
         // Draw circles
         for var i = 0; i < 3; i++ {
-            let circle = NVActivityIndicatorShape.Ring.createLayerWith(size: size, color: color)
+            let circle = NVActivityIndicatorShape.Ring.createLayerWith(size, color: color)
             let frame = CGRect(x: (layer.bounds.size.width - size.width) / 2,
                 y: (layer.bounds.size.height - size.height) / 2,
                 width: size.width,

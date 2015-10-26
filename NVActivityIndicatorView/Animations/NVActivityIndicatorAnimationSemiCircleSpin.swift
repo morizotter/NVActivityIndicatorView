@@ -23,7 +23,7 @@ class NVActivityIndicatorAnimationSemiCircleSpin: NVActivityIndicatorAnimationDe
         animation.removedOnCompletion = false
         
         // Draw circle
-        let circle = NVActivityIndicatorShape.CircleSemi.createLayerWith(size: size, color: color)
+        let circle = NVActivityIndicatorShape.CircleSemi.createLayerWith(size, color: color)
         let frame = CGRect(
             x: (layer.bounds.width - size.width) / 2,
             y: (layer.bounds.height - size.height) / 2,

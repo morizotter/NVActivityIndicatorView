@@ -39,7 +39,7 @@ class NVActivityIndicatorAnimationBallScaleRipple: NVActivityIndicatorAnimationD
         animation.removedOnCompletion = false
         
         // Draw circle
-        let circle = NVActivityIndicatorShape.Ring.createLayerWith(size: size, color: color)
+        let circle = NVActivityIndicatorShape.Ring.createLayerWith(size, color: color)
         let frame = CGRect(x: (layer.bounds.size.width - size.width) / 2,
             y: (layer.bounds.size.height - size.height) / 2,
             width: size.width,
